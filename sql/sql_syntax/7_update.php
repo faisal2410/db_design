@@ -31,3 +31,17 @@ This will update the "salary" and "department_id" columns of the "employees" tab
 
 Overall, the "UPDATE" statement is a powerful tool for modifying data in a table, and it's commonly used in various database applications.
 */ 
+// Before update
+// SET SQL_SAFE_MODE=0;
+// After update
+// SET SQL_SAFE_MODE=1;
+
+/*
+SQL_SAFE_MODE is a setting in MySQL that restricts certain potentially dangerous operations in order to prevent data loss or corruption. When this mode is enabled, certain SQL statements that could potentially cause problems will be disallowed or altered.
+
+For example, in SQL_SAFE_MODE, certain operations such as deleting or updating multiple rows using a single statement without specifying a WHERE clause are not allowed. This is because these types of statements can have unintended consequences and potentially delete or modify large amounts of data unintentionally.
+
+Enabling SQL_SAFE_MODE can be done by setting the sql_safe_updates system variable to 1. This variable can be set at the server level, the session level, or even within a specific SQL statement.
+
+Overall, SQL_SAFE_MODE is a useful tool for preventing accidental data loss or corruption, but it should be used carefully and only when necessary, as it can also restrict certain legitimate operations.
+*/ 
