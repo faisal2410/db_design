@@ -26,8 +26,7 @@ PRIMARY KEY: This keyword is used to specify the primary key for the table. The 
 
 Here's an example of how to use the CREATE TABLE statement to create a new table called "customers":
 
-sql
-Copy code
+
 CREATE TABLE customers (
    id INT NOT NULL PRIMARY KEY,
    first_name VARCHAR(50),
